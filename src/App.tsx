@@ -86,6 +86,7 @@ export default function App() {
     setFormSubmitted(true);
     setTimeout(() => {
       setContactForm({ name: '', email: '', subject: '', message: '' });
+      setFormSubmitted(false);
     }, 4000);
   };
 
