@@ -35,8 +35,8 @@ import {
   CurriculumBlueprint 
 } from './components/InteractiveArtifacts';
 
-// Profile image path
-const profileImg = "/src/assets/images/olantu_profile_1784459066848.jpg";
+// Profile image path — use Vite module import so it works in production build
+import profileImg from './assets/images/olantu_profile_1784459066848.jpg';
 
 export default function App() {
   const [activeTab, setActiveTab] = useState<'home' | 'cv' | 'sandbox'>('home');
